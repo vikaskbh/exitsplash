@@ -33,7 +33,7 @@
 				// handle messages
 				var button_message = "\n=====================\nPlease click 'Stay on Page' now!\n=====================";
 
-				if (/Firefox[\/\s](\d+)/.test(navigator.userAgent) && new Number(RegExp.$1) >= 4) {
+				if (/Firefox[\/\s](\d+)/.test(navigator.userAgent) && new Number(RegExp.$1) >= 4 && new Number(RegExp.$1) < 32) {
         			alert(event.data.message + button_message);
     			}
     			if (/MSIE[\/\s](\d+)/.test(navigator.userAgent) && new Number(RegExp.$1) >= 7) {
